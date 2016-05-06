@@ -9,9 +9,6 @@ ENV HUBOT_NAME opsbot
 ENV HUBOT_OWNER ops@cainc.com
 ENV HUBOT_PORT 8080
 ENV HUBOT_SLACK_BOTNAME ${HUBOT_NAME}
-ENV HUBOT_SLACK_TEAM slack_subdomain
-ENV HUBOT_SLACK_TOKEN secret-token-from-slack
-#ENV REDIS_URL redis://password@address:port/prefix
 
 # Set bot directory
 ENV BOTDIR /home/${BOTUSER}
