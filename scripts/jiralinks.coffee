@@ -40,14 +40,13 @@ project_regex = ///
   TBX|
   VOC|
   WWP)
-  -(\d+) #match '-' and issue number
-  (\s|$)
-  /i # ignore case
-///
+  -(\d+) # '-' and issue number
+  (\s|$) # space or end
+///i # ignore case
 
 module.exports = (robot) ->
 
-  robot.hear project_regex, (msg) ->
+  robot.hear /(^|\s)(AUP|AP|BRIG|CR|DW|DFP|D24|DWA|TOOL|FL|FDM|FDR|FRG|FRPT|IRC|IRP|ILP|IMP|IPA|ISM|ISD|COPS|OP|OPSTEST|RA|SAND|SE|TBX|VOC|WWP)-(\d+)(\s|$)/i, (msg) ->
     project = msg.match[2].toUpperCase()
     id = msg.match[3]
     issue = project + '-' + id
