@@ -1,5 +1,5 @@
 FROM node:latest
-MAINTAINER Brad Clark <bclark@cainc.com>
+MAINTAINER Brad Clark <bdashrad@gmail.com>
 
 # Configure the bot
 ENV BOTUSER hubot
