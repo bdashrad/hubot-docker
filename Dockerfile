@@ -22,7 +22,8 @@ RUN groupadd -g 501 ${BOTUSER}
 RUN useradd -m -u 501 -g 501 ${BOTUSER}
 
 # Install hubot and dependencies
-RUN npm install -g yo generator-hubot
+RUN npm install -g yo
+RUN npm install -g generator-hubot
 
 # Switch to our new user
 USER ${BOTUSER}
