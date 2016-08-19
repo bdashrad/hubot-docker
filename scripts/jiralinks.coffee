@@ -9,40 +9,40 @@
 jira_host = "https://jira.cainc.com"
 #zendesk_host = "https://your.zendesk.com"
 
-project_regex = ///
-  (^|\s) # start of line or whitespace
-  (AP| #list of projects
-  BRIG|
-  CR|
-  DW|
-  DFP|
-  D24|
-  DWA|
-  TOOL|
-  FL|
-  FDM|
-  FDR|
-  FRG|
-  FRPT|
-  IRC|
-  IRP|
-  ILP|
-  IMP|
-  IPA|
-  ISM|
-  ISD|
-  COPS|
-  OP|
-  OPSTEST|
-  RA|
-  SAND|
-  SE|
-  TBX|
-  VOC|
-  WWP)
-  -(\d+) # '-' and issue number
-  (\s|$) # space or end
-///i # ignore case
+# project_regex = ///
+#   (^|\s) # start of line or whitespace
+#   (AP| #list of projects
+#   BRIG|
+#   CR|
+#   DW|
+#   DFP|
+#   D24|
+#   DWA|
+#   TOOL|
+#   FL|
+#   FDM|
+#   FDR|
+#   FRG|
+#   FRPT|
+#   IRC|
+#   IRP|
+#   ILP|
+#   IMP|
+#   IPA|
+#   ISM|
+#   ISD|
+#   COPS|
+#   OP|
+#   OPSTEST|
+#   RA|
+#   SAND|
+#   SE|
+#   TBX|
+#   VOC|
+#   WWP)
+#   -(\d+) # '-' and issue number
+#   (\s|$) # space or end
+# ///i # ignore case
 
 module.exports = (robot) ->
 
